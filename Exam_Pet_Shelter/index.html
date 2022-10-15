@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pet Shelter</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_bar">
+            <div class=toptop>
+                <div class="pet_shelter">
+                    <img src="assets/heart-light.png" alt="heart-light">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div class="topright_nav">
+                    <p>Find a Pet</p>
+                    <p>About</p>
+                    <button onclick="thanos(this)" class="donate">Donate</button>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <div class=botbot>
+                    <div class="select_container">
+                        <div class="add_text">
+                            <p>Im looking for a...</p>
+                        </div>
+                        <div class="select">
+                            <img src="assets/paw-light.png" alt="paw-light">
+                            <select onchange="alertMessage();" id="select_this" class="drop_down" name="Any one Pet">
+                                <option value="">Any Pet</option>
+                                <option value="Dogs">Dogs</option>
+                                <option value="Cats">Cats</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="location_container">
+                        <div class="add_text_two">
+                            <p>in or near...</p>
+                        </div>
+                        <div class="location">
+                        <img src="assets/pin-light.png" alt="pin-light">
+                        <input class="type_it" type="text" name="city_zip_code" placeholder="City or Zip Code">
+                        </div>
+                    </div>
+                    <div class="purp_button">
+                        <button class="fynbf">Find your new best friend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_container">
+            <div class="pepper">
+                <div class="pic_one">
+                    <img class="pep_pic" src="assets/pepper.jpg" alt="pepper">
+                </div>
+                <div class="textone">
+                    <h1>Pepper</h1>
+                    <h2>Pepper is a slightly shy grey tabby, but she really loves<br> showing her human affection.</h2>
+                </div>
+                <div class="info_one">
+                    <p><output id="seven">7</output> petting(s)<br><button onclick="Like('seven')" type="button" id='siete'>Pet Pepper</button></p>
+                </div>
+            </div>
+            <div class="bruce">
+                <div class="pic_two">
+                    <img class="bruce_pic" src="assets/bruce.jpg" alt="bruce">
+                </div>
+                <div class="textwo">
+                    <h1>Bruce</h1>
+                    <h2>Bruce is a loyal companion. He loves long walks and cold<br> weather.</h2>
+                </div>
+                <div class="info_two">
+                    <p><output id="eleven">11</output> petting(s)<br><button onclick="Like('eleven')" type="button" id='once'>Pet Bruce</button></p>
+                </div>
+            </div>
+            <div class="oscar">
+                <div class="pic_three">
+                    <img class="osc_pic" src="assets/oscar.jpg" alt="oscar">
+                </div>
+                <div class="texthree">
+                    <h1>Oscar</h1>
+                    <h2>Oscar is bright, energetic, and friendly. He is looking for a<br> good home.</h2>
+                </div>
+                <div class="info_three">
+                    <p><output id="ten">10</output> petting(s)<br><button onclick="Like('ten')" type="button" id='diez'>Pet Oscar</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
